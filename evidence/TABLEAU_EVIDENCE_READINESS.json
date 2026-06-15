@@ -1,0 +1,33 @@
+﻿{
+  "generated_at": "2026-06-15T08:18:18+02:00",
+  "status": "READY_FOR_SUBMISSION_ZIP",
+  "workbook_ready": true,
+  "screenshots_ready": true,
+  "readiness_evidence_ready": true,
+  "report_ready": true,
+  "workbooks": {
+    "twb": {
+      "path": "tableau/workbook/house_price_tableau_dashboard.twb",
+      "exists": true,
+      "xml_parse_ok": true,
+      "story_point_count": 7
+    },
+    "twbx": {
+      "path": "tableau/workbook/house_price_tableau_dashboard.twbx",
+      "exists": true,
+      "zip_ok": true,
+      "expected_csvs_included": true
+    }
+  },
+  "screenshots": {
+    "dashboard_count": 6,
+    "story_count": 7,
+    "minimum_dimension_ok": true
+  },
+  "data": {
+    "market_rows": 50000,
+    "prediction_rows": 10000,
+    "price_units": "unspecified"
+  },
+  "caveat": "The dataset is synthetic and should not be described as verified live market data."
+}

@@ -1,0 +1,49 @@
+﻿table,field,data_type,role,description,tableau_use
+Market Properties,record_id,str,Dimension,Stable reproducible identifier assigned from original source row order.,Primary market analysis and dashboard filters.
+Market Properties,source_row_number,int64,Measure,Original one-based row number in the copied Kaggle CSV.,Primary market analysis and dashboard filters.
+Market Properties,area,int64,Measure,Property area measure; source does not confirm unit.,Primary market analysis and dashboard filters.
+Market Properties,bedrooms,int64,Measure,Number of bedrooms.,Primary market analysis and dashboard filters.
+Market Properties,bathrooms,int64,Measure,Number of bathrooms.,Primary market analysis and dashboard filters.
+Market Properties,floors,int64,Measure,Number of floors.,Primary market analysis and dashboard filters.
+Market Properties,age,int64,Measure,Property age in years.,Primary market analysis and dashboard filters.
+Market Properties,distance,int64,Measure,Distance-like field; source does not confirm exact reference point or unit.,Primary market analysis and dashboard filters.
+Market Properties,garage,int64,Measure,Binary indicator for garage availability.,Primary market analysis and dashboard filters.
+Market Properties,parking,int64,Measure,Binary indicator for parking availability.,Primary market analysis and dashboard filters.
+Market Properties,garden,int64,Measure,Binary indicator for garden availability.,Primary market analysis and dashboard filters.
+Market Properties,security,int64,Measure,Binary indicator for security availability.,Primary market analysis and dashboard filters.
+Market Properties,school_nearby,int64,Measure,Binary indicator for nearby school.,Primary market analysis and dashboard filters.
+Market Properties,hospital_nearby,int64,Measure,Binary indicator for nearby hospital.,Primary market analysis and dashboard filters.
+Market Properties,shopping_mall_nearby,int64,Measure,Binary indicator for nearby shopping mall.,Primary market analysis and dashboard filters.
+Market Properties,public_transport,int64,Measure,Binary indicator for public transport access.,Primary market analysis and dashboard filters.
+Market Properties,crime_rate,float64,Measure,Synthetic crime-rate indicator.,Primary market analysis and dashboard filters.
+Market Properties,population_density,int64,Measure,Synthetic population-density indicator.,Primary market analysis and dashboard filters.
+Market Properties,location,str,Dimension,"Categorical location segment: low, medium, premium.",Primary market analysis and dashboard filters.
+Market Properties,income_level,str,Dimension,"Categorical income segment: low, mid, high.",Primary market analysis and dashboard filters.
+Market Properties,price,float64,Measure,Target house price in unspecified price units.,Primary market analysis and dashboard filters.
+Model Predictions,actual_price,float64,Measure,"Actual target value from the 10,000-record model test set.",Prediction reliability dashboard and review-priority table.
+Model Predictions,predicted_price,float64,Measure,Model-estimated price from the previous Ridge Regression prediction output.,Prediction reliability dashboard and review-priority table.
+Model Predictions,absolute_error,float64,Measure,Absolute difference between actual and predicted price.,Prediction reliability dashboard and review-priority table.
+Model Predictions,percentage_error,float64,Measure,Absolute error divided by actual price.,Prediction reliability dashboard and review-priority table.
+Model Predictions,record_id,str,Dimension,Stable reproducible identifier assigned from original source row order.,Prediction reliability dashboard and review-priority table.
+Model Predictions,source_row_number,int64,Measure,Original one-based row number in the copied Kaggle CSV.,Prediction reliability dashboard and review-priority table.
+Model Predictions,actual_price_source,float64,Measure,Prediction reliability field.,Prediction reliability dashboard and review-priority table.
+Model Predictions,actual_price_source_difference,float64,Measure,Audit field comparing prediction actual_price to matched source price.,Prediction reliability dashboard and review-priority table.
+Model Predictions,residual,float64,Measure,Actual price minus predicted price.,Prediction reliability dashboard and review-priority table.
+Model Predictions,over_or_under_prediction,str,Measure,Direction of prediction error.,Prediction reliability dashboard and review-priority table.
+Model Predictions,prediction_quality_band,str,Dimension,Business-friendly prediction error band.,Prediction reliability dashboard and review-priority table.
+Model Predictions,review_priority,str,Dimension,Escalation priority derived from percentage error and RMSE.,Prediction reliability dashboard and review-priority table.
+Model Metrics,model,str,Dimension,Model name used in the prior machine-learning comparison.,KPI cards and model comparison table.
+Model Metrics,mae,float64,Measure,Mean absolute error.,KPI cards and model comparison table.
+Model Metrics,mse,float64,Measure,Mean squared error.,KPI cards and model comparison table.
+Model Metrics,rmse,float64,Measure,Root mean squared error.,KPI cards and model comparison table.
+Model Metrics,r2,float64,Measure,Coefficient of determination.,KPI cards and model comparison table.
+Model Metrics,cv_mae,float64,Measure,Cross-validation mean absolute error.,KPI cards and model comparison table.
+Model Metrics,cv_rmse,float64,Measure,Cross-validation root mean squared error.,KPI cards and model comparison table.
+Model Metrics,cv_r2,float64,Measure,Cross-validation R-squared.,KPI cards and model comparison table.
+Model Metrics,rank_by_rmse,int64,Measure,Model-performance metric.,KPI cards and model comparison table.
+Model Metrics,is_best_model,bool,Dimension,Model-performance metric.,KPI cards and model comparison table.
+Feature Importance,feature,str,Dimension,Encoded feature name from the model pipeline.,Feature-importance bar chart.
+Feature Importance,importance,float64,Measure,Relative feature importance score from the prior model output.,Feature-importance bar chart.
+Feature Importance,feature_clean,str,Dimension,Human-readable feature label.,Feature-importance bar chart.
+Feature Importance,importance_rank,int64,Measure,Feature-importance field.,Feature-importance bar chart.
+Feature Importance,cumulative_importance,float64,Measure,Feature-importance field.,Feature-importance bar chart.

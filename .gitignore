@@ -1,0 +1,51 @@
+﻿# Operating system and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Credentials and private local config
+.env
+.env.*
+kaggle.json
+credentials*
+*token*
+*.pem
+*.key
+
+# Office and temporary files
+~$*
+*.tmp
+*.temp
+*.bak
+
+# Private report and submission files are kept outside GitHub
+report/
+submission/
+*_Submission_Final/
+HousePriceTableau_Submission_Final/
+*.doc
+*.docx
+*.pdf
+*.zip
+
+# Local working material
+exports/
+archive/
+_local_archive_review/
+rendered_libreoffice_pages/
+_libreoffice_pdf/
+_libreoffice_profile/
+libreoffice_profile/
+

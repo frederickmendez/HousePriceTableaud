@@ -38,9 +38,9 @@ The repository is intentionally focused on reproducibility and supporting eviden
 
 ## Appendix C: GitHub Repository Information
 
-GitHub repository:
+GitHub repository name:
 
-https://github.com/<owner>/HousePriceTableaud
+`HousePriceTableaud`
 
 The repository includes the Tableau workbook, supporting CSV files, final screenshots, validation evidence, and documentation. The academic Word report and PDF are not included in GitHub; they are kept in the private submission package.
 

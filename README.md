@@ -108,8 +108,7 @@ The academic Word report and PDF are intentionally not included in this GitHub r
 
 ## GitHub Repository Information
 
-Repository URL:
-https://github.com/<owner>/HousePriceTableaud
+Repository name: `HousePriceTableaud`
 
 ## Academic Disclaimer
 
